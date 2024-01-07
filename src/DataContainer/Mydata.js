@@ -1,0 +1,77 @@
+import React from 'react'
+
+const Mydata = () => {
+    const data = [
+        {
+            id: 1,
+            title: 'Grey Valour',
+            body: `
+                An online platform with a skilled team of tech experts 
+                creating projects, solutions, tutorials, and fostering an 
+                open-source community for freelancers and tech 
+                enthusiasts.
+            `,
+            shortened : "Online platform led by skilled tech experts, creating projects, solutions, tutorials, and fostering an open-source community for freelancers and tech enthusiasts.",
+            img: "/Images/project3.png",
+            tech_stack: ["React", "Next js", "Django","Javascript","Bootstrap","Heroku","AWS"],
+            link: "https://www.greyvalour.com/"
+        },
+        {
+            id: 2,
+            title: 'Ustuda',
+            body: `U-STUDA: An online learning platform offering diverse 
+            courses to enhance skills and education for career advancement
+             in Tech, Domestic, Business, 
+            and Academics, created by experienced tutors.`,
+            shortened : "Your go-to online learning platform for skill enhancement and career advancement in Tech, Domestic, Business, and Academics, curated by experienced tutors.",
+            img: "/Images/project2.png",
+            tech_stack: ["React", "Django","Javascript","Bootstrap","Linode"],
+            link: "https://www.ustuda.com/"
+        },
+        {
+            id: 3,
+            title: 'Kids Multicultural world',
+            body: `The Kids Multicultural World: An academy fostering 
+            cultural pride, unity, and awareness among kids aged 
+            0 months to 17 years through cultural activism, 
+            fashion, modeling, and acting. Aiming to eliminate 
+            discrimination, bullying, and segregation
+             by promoting self-growth and talent utilization.`,
+            shortened : "A cultural empowerment app for kids aged 0 months to 17 years, promoting cultural pride, unity, and awareness through activities such as cultural activism, fashion, modeling, and acting. Dedicated to eliminating discrimination, bullying, and segregation by fostering self-growth and talent utilization.",
+            img: "/Images/project1.png",
+            tech_stack: ["React", "Django","Javascript","Bootstrap","Heroku","AWS"],
+            link: "https://www.kidsmulticulturalworld.org/"
+        },
+        {
+            id: 4,
+            title: 'Ct Digital Tech',
+            body: `CT Digital: A global digital team merging 
+            design and technology to craft empowering brand 
+            experiences worldwide. Collaborating with 
+            forward-thinking 
+            brands to enhance digital presence and efficiency.`,
+            shortened : "A global digital team blending design and technology to create empowering brand experiences worldwide.",
+            img: "/Images/project4.png",
+            tech_stack: ["jQuery", "Flask","Javascript","Bootstrap","AWS"],
+            link: "https://ctdigitaltech.com/"
+        },
+        {
+            id: 5,
+            title: 'Sky House',
+            body: `Discover my innovative portfolio, perched on a 
+            floating island in the expansive sky. Explore a boundless 
+            digital realm accompanied by a dynamic drone, showcasing 
+            creativity without limits. Like the floating island, my 
+            portfolio embraces the limitless possibilities of the 
+            digital landscape.`,
+            shortened : "Explore my cutting-edge portfolio on a floating island in the sky, where creativity knows no bounds. Embrace limitless possibilities in the digital realm, accompanied by a dynamic drone.",
+            img: "/Images/project5.png",
+            tech_stack: ["React","Javascript","Bootstrap","Three Js","React Fiber","Framer Motion"],
+            link: "/home"
+        }
+    ]
+
+  return data
+}
+
+export default Mydata

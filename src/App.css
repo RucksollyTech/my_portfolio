@@ -1,0 +1,222 @@
+.canvasContainer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #fff !important;
+}
+.pointer{
+    cursor: pointer;
+}
+.canvasMain{
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+}
+.cursorGrabbing{
+    cursor: grabbing;
+}
+
+.cursorGrab{
+    cursor: grab;
+}
+
+.popUps{
+    position: absolute;
+    z-index: 10;
+    margin: 100px auto;
+    left: 0;
+    right: 0;
+    max-width: 300px;
+    width: 100%;
+}
+
+.contactAnimated{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 110px 0;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: 100vh;
+    /* color: #b1e1ff; */
+}
+.ContactMee .navBar{
+    max-width: 1200px;
+}
+.ContactMee .navBar a{
+    color: #fff;
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px 10px;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+}
+.navBar a{
+    /* background: rgb(22,91,233,0.1);
+    border-radius: 4px;
+    padding: 4px 10px;
+    color: #fff; */
+    color: black;
+}
+.pr_2{
+    margin-right: 30px;
+}
+.popUpMessageContainer{
+    border-radius: 10px;
+    background: rgb(22,91,233,0.5);
+    padding: 15px;
+}
+.textContainer{
+    border-bottom: 1px dashed #fff;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+}
+.bottomInfo{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.opacity_none{
+    opacity: 0;
+}
+.opacity{
+    opacity: 1;
+}
+form input,form textarea{
+    background: transparent !important;
+    resize: none;
+    color: #fff !important;
+}
+.toasts{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    z-index: 100;
+}
+.d_non{
+    display: none;
+}
+.toast-body{
+    background-color: #fff !important;
+}
+.homeLogo{
+    display: none;
+}
+.ContactMee .homeLogo,.projectPage .homeLogo{
+    display: inline;
+}
+.hoverRobot{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    height:150px;
+    width: 150px;
+}
+
+.LeftHand{
+    position: fixed;
+    padding: 90px 140px;
+}
+
+
+.starsBackground{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background:transparent;
+}
+.starsBackground2{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    background-color: black;
+}
+.SunCover{
+    padding: 20px;
+    border-radius: 5px;
+}
+.SunCover.Open{
+    background: rgb(22,91,233,0.06) !important;
+}
+.AboutIntro{
+    display: none;
+}
+@media (max-width:1200px) {
+    .LeftHand{
+        padding: 40px 70px;
+    }
+    .LeftHand.Open{
+        padding: 40px 50px;
+    }
+}
+@media (max-width:940px) {
+    .LeftContainer .pt-3{
+        max-width: 300px ;
+    }
+}
+@media (max-width:780px) {
+    .LeftHand{
+        padding: 40px 50px;
+        max-width: 350px;
+    }
+    .LeftHand.Open{
+        padding: 40px 30px;
+        max-width: 350px;
+    }
+}
+@media (max-width: 768px) {
+    .contactAnimated{
+        display: block;
+        height: fit-content;
+    }
+    .hunVh canvas{
+        height: 100vh;
+    }
+    
+}
+
+@media (max-width:500px) {
+    .SunCover{
+        padding: 15px;
+    }
+
+}
+
+@media (max-width:700px) {
+    .AboutIntro{
+        display: block;
+    }
+    .LeftHand{
+        display: none;
+    }
+
+}
+@media (max-width:400px) {
+    .toasts{
+        max-width: 300px;
+        left: 10px;
+    }
+    .navBar a{
+        font-size: 14px;
+    }
+    .SunCover{
+        padding: 7px;
+    }
+}

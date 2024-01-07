@@ -1,0 +1,183 @@
+import React, { Suspense, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
+import Mydata from './DataContainer/Mydata'
+import HoverRobot from './SkyHouse/HoverRobot'
+import { Canvas } from '@react-three/fiber'
+import { motion } from "framer-motion"
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+
+const Projects = () => {
+    const theData =  Mydata()
+    const [data,setData] = useState(theData[0])
+    const [pointerDown,setPointerDown] = useState(false)
+    const getProject = id=> setData(theData.find(data => data.id === id))
+
+    const adjustRobotScreenSize = () => {
+        let screenScale
+        let screenPosition
+        if(window.innerWidth < 768){
+            screenScale = [3,3,3]
+            screenPosition =[-0.5,-1.5,0]
+        }else{
+            screenScale = [6,6,6]
+            screenPosition =[0,-2,0]
+        }
+        return [screenScale,screenPosition]
+    }
+    const [robotScale,robotPosition] = adjustRobotScreenSize()
+
+    const container = {
+        hidden: { opacity: 1, scale: 0 },
+        visible: {
+          opacity: 1,
+          scale: 1,
+          transition: {
+            delayChildren: 0.3,
+            staggerChildren: 0.2
+          }
+        }
+    }
+        
+    const item = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+          y: 0,
+          opacity: 1
+        }
+    }
+    const constraintsRef = useRef(null)
+
+    const adjustHomeIconScreenSize = () => {
+        let screenSize
+
+        if(window.innerWidth < 768){
+            screenSize = 30
+        }else{
+            screenSize = 40
+        }
+        return [screenSize]
+    }
+    const [homeIconSize] = adjustHomeIconScreenSize()
+
+    return (
+        <motion.div ref={constraintsRef}>
+            <div className='projectPage'>
+                <div className='projectNav'>
+                    <div>
+                        <Link to={"/"} className='pr_2 homeLogo'>
+                            <img width={homeIconSize} height={homeIconSize} src={`https://img.icons8.com/sf-black-filled/${homeIconSize}/FFFFFF/home.png`} alt="home"/>
+                        </Link>
+                        <a href={"/Pdf/resume.pdf"} target='_blank' rel="noreferrer" className='textColor pr_2'>
+                            My Resume
+                        </a>
+                        <Link to={"/about"} className='textColor'>
+                            About
+                        </Link>
+                    </div>
+                    <div className='contactMeShowIcons'>
+                        <NavDropdown title="📧" id="navbarScrollingDropdown">
+                            <Link to={"/contact"} className='dropdown-item'>
+                                <img width="24" height="24" src={`https://img.icons8.com/sf-black-filled/24/94A3B8/contact-card.png`} alt="contact-card"/>
+                            </Link>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item target='_blank' rel="noreferrer" href="https://github.com/RucksollyTech">
+                                <img width="21" height="21" src="https://img.icons8.com/material-sharp/21/94A3B8/github.png" alt="github"/>
+                            </NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/chibuzor-anthony-907289191">
+                                <img width="21" height="21" src="https://img.icons8.com/ios-filled/21/94A3B8/linkedin.png" alt="linkedin"/>
+                            </NavDropdown.Item>
+                        </NavDropdown>
+                        <div className='iconsContainer'>
+                            {/* <img width="30" height="30" src="https://img.icons8.com/windows/30/94A3B8/instagram-new.png" alt="instagram-new"/> */}
+                            {/* <img width="27" height="27" src="https://img.icons8.com/ios-filled/27/94A3B8/twitter.png" alt="twitter"/> */}
+                            <Link to={"/contact"}>
+                                <img width="30" height="30" src="https://img.icons8.com/sf-black-filled/30/94A3B8/contact-card.png" alt="contact-card"/>
+                            </Link>
+                            <a href="https://github.com/RucksollyTech" target='_blank' rel="noreferrer">
+                                <img width="27" height="27" src="https://img.icons8.com/material-sharp/27/94A3B8/github.png" alt="github"/>
+                            </a>
+                            <a href="https://www.linkedin.com/in/chibuzor-anthony-907289191" target='_blank' rel="noreferrer">
+                                <img width="27" height="27" src="https://img.icons8.com/ios-filled/27/94A3B8/linkedin.png" alt="linkedin"/>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div className="projectPageContainer">
+                    <motion.div
+                        variants={container}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        <motion.div className="projectTitle" variants={item}>
+                            {data.title}
+                        </motion.div>
+                        <motion.div className="projectBody pt-1" variants={item}>
+                            {data.body}
+                            {data.id === 1 &&  
+                                <span className="text-white">Oh, of course, you can move the <span className='text-danger'>robot</span> around. 😇</span>
+                            }
+                            <div className="pt-3">
+                                {data.id === 5 ?
+                                    <Link to={"/home"} className='textColor'>
+                                        <span>View Site </span>
+                                        <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                        <img width="24" height="24" className='d_none' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                        <img width="24" height="24" className='d_none1' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                    </Link>
+                                :
+                                    <a href={data.link} target='_blank' className='textColor'>
+                                        <span>View Site </span>
+                                        <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                        <img width="24" height="24" className='d_none' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                        <img width="24" height="24" className='d_none1' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                    </a>
+                                }
+                            </div>
+                        </motion.div>
+                        
+                    </motion.div>
+                    <div>
+                        <div className="projectListHeader">
+                            Projects
+                        </div>
+                        <div className='relative'>
+                            <div className="projectListContainer">
+                                {theData && theData.map(info=>(
+                                    <div key={info.id} className='textColor pointer' onClick={()=>getProject(info.id)}>
+                                        <img width="24" height="24" className='d_none' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                        <img width="24" height="24" className='d_none1' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                        <label className='pointer'>{info.title}</label>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className='listborder' />
+                        </div>
+                    </div>
+                </div>
+                <motion.div 
+                    drag className={`hoverRobot ${pointerDown ? 'cursorGrabbing' : 'cursorGrab' }`} 
+                    dragConstraints={constraintsRef}
+                    onPointerDown={()=>setPointerDown(true)}
+                    onPointerUp={()=>setPointerDown(false)}
+                >
+                    <Canvas camera={{ near: 0.1, far: 1000 }}>
+                        <directionalLight position={[1, 1, 1]} intensity={2} />
+                        <ambientLight intensity={0.5} />
+                        <Suspense fallback={null}>
+                            <HoverRobot
+                            position={robotPosition}
+                            rotation={[12.6, 0.05, 0]}
+                            scale={robotScale}
+                            />
+                        </Suspense>
+                    </Canvas>
+                </motion.div>
+            </div>
+        </motion.div>
+    )
+}
+
+export default Projects
