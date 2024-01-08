@@ -35,7 +35,7 @@ const ExperienceData = () => {
             type: "experience",
         },
         {
-            name: "Premier Academy",
+            name: "Premier Academy Abuja",
             position: "Web Developer",
             date: "2021 - 2022",
             description: `

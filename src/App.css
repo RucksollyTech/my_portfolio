@@ -148,6 +148,19 @@ form input,form textarea{
     z-index: -2;
     background-color: black;
 }
+.starsBackground3{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100000;
+    background-color: rgb(15,23,42) !important;
+    overflow-y: auto;
+}
+.pl_1{
+    padding-left: 10px !important;
+}
 .SunCover{
     padding: 20px;
     border-radius: 5px;
@@ -157,6 +170,17 @@ form input,form textarea{
 }
 .AboutIntro{
     display: none;
+}
+.preLoaderPortfolioCover{
+    background: rgb(22,91,233,0.06) !important;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 100px auto;
+}
+.LoadingColorS{
+    color: #EAEAEA;
+    padding-left: 10px;
 }
 @media (max-width:1200px) {
     .LeftHand{
@@ -218,5 +242,12 @@ form input,form textarea{
     }
     .SunCover{
         padding: 7px;
+    }
+    .preLoaderPortfolioCover .experience {
+        font-size: 20px;
+    }
+    .preLoaderPortfolioCover{
+        padding: 25px 20px;
+        margin: 30px auto;
     }
 }

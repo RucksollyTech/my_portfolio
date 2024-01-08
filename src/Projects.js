@@ -17,7 +17,7 @@ const Projects = () => {
         let screenScale
         let screenPosition
         if(window.innerWidth < 768){
-            screenScale = [3,3,3]
+            screenScale = [4,4,4]
             screenPosition =[-0.5,-1.5,0]
         }else{
             screenScale = [6,6,6]
@@ -78,22 +78,25 @@ const Projects = () => {
                     <div className='contactMeShowIcons'>
                         <NavDropdown title="📧" id="navbarScrollingDropdown">
                             <Link to={"/contact"} className='dropdown-item'>
-                                <img width="24" height="24" src={`https://img.icons8.com/sf-black-filled/24/94A3B8/contact-card.png`} alt="contact-card"/>
+                                <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/94A3B8/mail.png" alt="mail"/>
+                                <span className="pl_1 textColor">Contact</span>
                             </Link>
                             <NavDropdown.Divider />
                             <NavDropdown.Item target='_blank' rel="noreferrer" href="https://github.com/RucksollyTech">
-                                <img width="21" height="21" src="https://img.icons8.com/material-sharp/21/94A3B8/github.png" alt="github"/>
+                                <img width="24" height="24" src="https://img.icons8.com/material-sharp/24/94A3B8/github.png" alt="github"/>
+                                <span className="pl_1 textColor">Github</span>
                             </NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item target='_blank' rel="noreferrer" href="https://www.linkedin.com/in/chibuzor-anthony-907289191">
-                                <img width="21" height="21" src="https://img.icons8.com/ios-filled/21/94A3B8/linkedin.png" alt="linkedin"/>
+                                <img width="24" height="24" src="https://img.icons8.com/ios-filled/24/94A3B8/linkedin.png" alt="linkedin"/>
+                                <span className="pl_1 textColor">LinkedIn</span>
                             </NavDropdown.Item>
                         </NavDropdown>
                         <div className='iconsContainer'>
                             {/* <img width="30" height="30" src="https://img.icons8.com/windows/30/94A3B8/instagram-new.png" alt="instagram-new"/> */}
                             {/* <img width="27" height="27" src="https://img.icons8.com/ios-filled/27/94A3B8/twitter.png" alt="twitter"/> */}
                             <Link to={"/contact"}>
-                                <img width="30" height="30" src="https://img.icons8.com/sf-black-filled/30/94A3B8/contact-card.png" alt="contact-card"/>
+                                <img width="28" height="28" src="https://img.icons8.com/material-rounded/28/94A3B8/mail.png" alt="mail"/>
                             </Link>
                             <a href="https://github.com/RucksollyTech" target='_blank' rel="noreferrer">
                                 <img width="27" height="27" src="https://img.icons8.com/material-sharp/27/94A3B8/github.png" alt="github"/>
@@ -168,9 +171,9 @@ const Projects = () => {
                         <ambientLight intensity={0.5} />
                         <Suspense fallback={null}>
                             <HoverRobot
-                            position={robotPosition}
-                            rotation={[12.6, 0.05, 0]}
-                            scale={robotScale}
+                                position={robotPosition}
+                                rotation={[12.6, 0.05, 0]}
+                                scale={robotScale}
                             />
                         </Suspense>
                     </Canvas>
