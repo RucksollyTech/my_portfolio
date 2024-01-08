@@ -10,9 +10,9 @@ const HomeInfo = ({currentStage}) => {
                     <h1 className='textContainer pb-2 '>
                         Hello, I am Anthony, a fullstack developer
                     </h1>
-                    <p className="bottomInfo">
+                    <div className="bottomInfo">
                         Drag the screen to start 👉
-                    </p>
+                    </div>
                 </div>
             }
             {currentStage === 2 &&

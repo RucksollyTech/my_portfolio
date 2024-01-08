@@ -74,7 +74,7 @@ const Home = () => {
             <Canvas
                 className={`canvasMain ${isRotating ? 'cursorGrabbing' : 'cursorGrab' }`}
                 camera={{near: 0.1, far : 1000}} 
-                frameLoop="demand"
+                frameloop="demand"
             >
                 <Suspense fallback={<Loader />}>
                     <directionalLight position={[1,1,1]} intensity={2}/>
