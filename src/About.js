@@ -92,7 +92,7 @@ const About = () => {
                 </div>
                 <div className='LeftContainer'>
                     <div className='experience'>
-                        Experienced Full-Stack Engineer
+                        Experienced Full-Stack Developer
                     </div>
                     <div className='pt-3'>
                         I create engaging digital experiences and share the joy of programming with others.

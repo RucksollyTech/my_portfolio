@@ -20,8 +20,8 @@ const UnloadedPortfolio = () => {
             <div>
                 <div className="pt-2">
                     You are here because your network/device is
-                    loading or couldn't load the model for this page or 
-                    just a just a coincidence you are here 😇. Little matter, we 
+                    loading or couldn't load the model for this page, or
+                    just a coincidence you are here 😇. No matter, we
                     are here.
                 </div>
                 <div className="pt-2">
