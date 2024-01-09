@@ -4,7 +4,7 @@ const ExperienceData = () => {
         {
             name: "Grey Valour",
             position: "Full Stack Developer",
-            date: "2022 - PRESENT",
+            date: "2023 - PRESENT",
             description: `
                 Transformed the startup company website into a flexible 
                 and user-friendly experience. Developed high-quality, 
@@ -22,7 +22,7 @@ const ExperienceData = () => {
         {
             name: "Kids Multicultural World",
             position: "Full Stack Developer",
-            date: "2022",
+            date: "2022-2023",
             description: `
                 Revitalized company website, enhancing flexibility 
                 and user experience during a short-term contract. 
