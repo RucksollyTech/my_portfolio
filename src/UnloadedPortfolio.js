@@ -37,8 +37,8 @@ const UnloadedPortfolio = () => {
                     <div className='text-white'>
                         Please check out my :
                     </div>
-                    <div className="pt-1">
-                        <a href={"/projects"} className='textColor'>
+                    <div className="pt-1 unloadedPortLinks">
+                        <a href={"/about"} className='textColor'>
                             <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
                             <img width="24" height="24" className='d_none' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
                             <img width="24" height="24" className='d_none1' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
