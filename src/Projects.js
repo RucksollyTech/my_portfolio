@@ -122,6 +122,9 @@ const Projects = () => {
                             {data.id === 1 &&  
                                 <span className="text-white">Oh, of course, you can move the <span className='text-danger'>robot</span> around. 😇</span>
                             }
+                            <div className='pt-2'>
+                                <span>Tech Stack: </span>{data.tech_stack.join(', ')}
+                            </div>
                             <div className="pt-3">
                                 {data.id === 5 ?
                                     <Link to={"/home"} className='textColor'>

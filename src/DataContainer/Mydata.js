@@ -13,9 +13,10 @@ const Mydata = () => {
             `,
             shortened : "Online platform led by skilled tech experts, creating projects, solutions, tutorials, and fostering an open-source community for freelancers and tech enthusiasts.",
             img: "/Images/project3.png",
-            tech_stack: ["React", "Next js", "Django","Javascript","Bootstrap","Heroku","AWS"],
+            tech_stack: ["React", "Next js", "Python" ,"Django","Javascript","Redux","Bootstrap","Heroku","AWS"],
             link: "https://www.greyvalour.com/"
         },
+        
         {
             id: 2,
             title: 'Ustuda',
@@ -25,7 +26,7 @@ const Mydata = () => {
             and Academics, created by experienced tutors.`,
             shortened : "Your go-to online learning platform for skill enhancement and career advancement in Tech, Domestic, Business, and Academics, curated by experienced tutors.",
             img: "/Images/project2.png",
-            tech_stack: ["React", "Django","Javascript","Bootstrap","Linode"],
+            tech_stack: ["React", "Python", "Django","Javascript","Redux","Bootstrap","Linode"],
             link: "https://www.ustuda.com/"
         },
         {
@@ -39,8 +40,31 @@ const Mydata = () => {
              by promoting self-growth and talent utilization.`,
             shortened : "A cultural empowerment app for kids aged 0 months to 17 years, promoting cultural pride, unity, and awareness through activities such as cultural activism, fashion, modeling, and acting. Dedicated to eliminating discrimination, bullying, and segregation by fostering self-growth and talent utilization.",
             img: "/Images/project1.png",
-            tech_stack: ["React", "Django","Javascript","Bootstrap","Heroku","AWS"],
+            tech_stack: ["React","Python", "Django","Javascript","Redux","Bootstrap","Heroku","AWS"],
             link: "https://www.kidsmulticulturalworld.org/"
+        },
+        {
+            id: 6,
+            title: 'GeegPay Competition',
+            body: `
+                This is an analytic dashboard representing total sales, returns and customers purchase over a certain period of time.
+                It involves the recreation of the design from this figma link: https://www.figma.com/file/IvIZCBKMfmY3Qty0Gqx6S8/Analytics-Dashboard?type=design&node-id=1%3A3&mode=design&t=BJeq5TMSwzAaqlz0-1 
+            `,
+            shortened : "This is an analytic dashboard representing total sales, returns and customers purchase over a certain period of time.",
+            img: "/Images/project6.png",
+            tech_stack: ["React","Javascript","CSS","AOS","vercel"],
+            link: "https://geegpay-amber.vercel.app"
+        },
+        {
+            id: 7,
+            title: 'Krys Patra',
+            body: `
+                Ankara Bags . Ankara Luxurious Bags.
+            `,
+            shortened : "",
+            img: "/Images/project7.png",
+            tech_stack: ["React","Python", "Django","Javascript","Redux","Bootstrap","Pythonanywhere","AWS"],
+            link: "https://bags-gold.vercel.app"
         },
         {
             id: 4,
@@ -68,7 +92,8 @@ const Mydata = () => {
             img: "/Images/project5.png",
             tech_stack: ["React","Javascript","Bootstrap","Three Js","React Fiber","Framer Motion"],
             link: "/home"
-        }
+        },
+        
     ]
 
   return data

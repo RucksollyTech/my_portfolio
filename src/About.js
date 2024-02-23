@@ -39,8 +39,8 @@ const About = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-        const currentScrollY = window.scrollY;
-        setPrevScrollY2(currentScrollY);
+            const currentScrollY = window.scrollY;
+            setPrevScrollY2(currentScrollY);
         };
         window.addEventListener('scroll', handleScroll);
         return () => {
