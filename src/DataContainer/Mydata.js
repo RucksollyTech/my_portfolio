@@ -3,7 +3,18 @@ import React from 'react'
 const Mydata = () => {
     const data = [
         {
-            id: 1,
+            id: 8,
+            title: 'URL Shortener',
+            body: `
+            A free, simple, and fast URL shortener and QR code generator that allows shortening of any link from various platforms including WhatsApp, LinkedIn, Instagram, Facebook, YouTube, TikTok, blogs,X, and more, while enabling anonymous user access.
+            `,
+            shortened : "A free, simple, and fast URL shortener and QR code generator that allows shortening of any link from various platforms including WhatsApp, LinkedIn, Instagram, Facebook, YouTube, TikTok, blogs, X, and more, while enabling anonymous user access.",
+            img: "/Images/project8.png",
+            tech_stack: ["Next js","Typescript","Tailwind CSS","Hasura GraphQL"],
+            link: "https://z1n.vercel.app"
+        },
+        {
+            id: 7,
             title: 'Grey Valour',
             body: `
                 An online platform with a skilled team of tech experts 
@@ -13,12 +24,12 @@ const Mydata = () => {
             `,
             shortened : "Online platform led by skilled tech experts, creating projects, solutions, tutorials, and fostering an open-source community for freelancers and tech enthusiasts.",
             img: "/Images/project3.png",
-            tech_stack: ["React", "Next js", "Python" ,"Django","Javascript","Redux","Bootstrap","Heroku","AWS"],
+            tech_stack: ["React", "Python" ,"Django","Javascript","Redux","Bootstrap","Heroku","AWS"],
             link: "https://www.greyvalour.com/"
         },
         
         {
-            id: 2,
+            id: 6,
             title: 'Ustuda',
             body: `U-STUDA: An online learning platform offering diverse 
             courses to enhance skills and education for career advancement
@@ -30,7 +41,7 @@ const Mydata = () => {
             link: "https://www.ustuda.com/"
         },
         {
-            id: 3,
+            id: 5,
             title: 'Kids Multicultural world',
             body: `The Kids Multicultural World: An academy fostering 
             cultural pride, unity, and awareness among kids aged 
@@ -44,7 +55,7 @@ const Mydata = () => {
             link: "https://www.kidsmulticulturalworld.org/"
         },
         {
-            id: 6,
+            id: 2,
             title: 'GeegPay Competition',
             body: `
                 This is an analytic dashboard representing total sales, returns and customers purchase over a certain period of time.
@@ -56,7 +67,7 @@ const Mydata = () => {
             link: "https://geegpay-amber.vercel.app"
         },
         {
-            id: 7,
+            id: 1,
             title: 'Krys Patra',
             body: `
                 Ankara Bags . Ankara Luxurious Bags.
@@ -80,7 +91,7 @@ const Mydata = () => {
             link: "https://ctdigitaltech.com/"
         },
         {
-            id: 5,
+            id: 3,
             title: 'Sky House',
             body: `Discover my innovative portfolio, perched on a 
             floating island in the expansive sky. Explore a boundless 
