@@ -1,4 +1,3 @@
-import React from 'react'
 
 const Mydata = () => {
     const data = [
@@ -24,7 +23,7 @@ const Mydata = () => {
             `,
             shortened : "Online platform led by skilled tech experts, creating projects, solutions, tutorials, and fostering an open-source community for freelancers and tech enthusiasts.",
             img: "/Images/project3.png",
-            tech_stack: ["React", "Python" ,"Django","Javascript","Redux","Bootstrap","Heroku","AWS"],
+            tech_stack: ["React", "Python" ,"Django","Javascript","Redux","Bootstrap","Python Anywhere","AWS"],
             link: "https://www.greyvalour.com/"
         },
         
@@ -51,7 +50,7 @@ const Mydata = () => {
              by promoting self-growth and talent utilization.`,
             shortened : "A cultural empowerment app for kids aged 0 months to 17 years, promoting cultural pride, unity, and awareness through activities such as cultural activism, fashion, modeling, and acting. Dedicated to eliminating discrimination, bullying, and segregation by fostering self-growth and talent utilization.",
             img: "/Images/project1.png",
-            tech_stack: ["React","Python", "Django","Javascript","Redux","Bootstrap","Heroku","AWS"],
+            tech_stack: ["React","Python", "Django","Javascript","Redux","Bootstrap","Python Anywhere","AWS"],
             link: "https://www.kidsmulticulturalworld.org/"
         },
         {
