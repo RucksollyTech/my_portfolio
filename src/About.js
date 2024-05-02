@@ -214,7 +214,7 @@ const About = () => {
                                     <div className='colorMuted font_13'>
                                         {experience.date}
                                     </div>
-                                    <div>
+                                    <a href={experience.url} target='_blank' rel="noreferrer">
                                         <div className='text_white bold6 font_18'>
                                             {experience.name}
                                         </div>
@@ -231,7 +231,7 @@ const About = () => {
                                                 </span>
                                             ))}
                                         </div>
-                                    </div>
+                                    </a>
                                 </Tilt>
                             ))}
                             
@@ -250,7 +250,7 @@ const About = () => {
                     <div id='projects'>
                         <div className='pt_project'>
                             {project_data && project_data.map((project,index)=>(
-                                <div className='projectContainer' key={index}>
+                                <a href={project.link} target='_blank' rel="noreferrer" className='projectContainer' key={index}>
                                     <div className='colorMuted font_13'>
                                         {project.img && <img src={project.img} alt={`${project.title} photo`} />}
                                     </div>
@@ -269,7 +269,7 @@ const About = () => {
                                             ))}
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             ))}
                             
                         </div>

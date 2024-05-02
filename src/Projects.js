@@ -10,6 +10,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 const Projects = () => {
     const theData =  Mydata()
     const [data,setData] = useState(theData[0])
+    const lastId = theData[0].id
     const [pointerDown,setPointerDown] = useState(false)
     const getProject = id=> setData(theData.find(data => data.id === id))
 
@@ -119,28 +120,19 @@ const Projects = () => {
                         </motion.div>
                         <motion.div className="projectBody pt-1" variants={item}>
                             {data.body}
-                            {data.id === 1 &&  
+                            {data.id === lastId &&  
                                 <span className="text-white">Oh, of course, you can move the <span className='text-danger'>robot</span> around. 😇</span>
                             }
                             <div className='pt-2'>
                                 <span>Tech Stack: </span>{data.tech_stack.join(', ')}
                             </div>
                             <div className="pt-3">
-                                {data.id === 5 ?
-                                    <Link to={"/home"} className='textColor'>
-                                        <span>View Site </span>
-                                        <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
-                                        <img width="24" height="24" className='d_none' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
-                                        <img width="24" height="24" className='d_none1' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
-                                    </Link>
-                                :
-                                    <a href={data.link} target='_blank' className='textColor'>
-                                        <span>View Site </span>
-                                        <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
-                                        <img width="24" height="24" className='d_none' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
-                                        <img width="24" height="24" className='d_none1' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
-                                    </a>
-                                }
+                                <a href={data.link} target='_blank'  rel="noreferrer" className='textColor'>
+                                    <span>View Site </span>
+                                    <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                    <img width="24" height="24" className='d_none' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                    <img width="24" height="24" className='d_none1' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                </a>
                             </div>
                         </motion.div>
                         

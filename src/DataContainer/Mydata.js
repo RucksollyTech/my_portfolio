@@ -12,20 +12,20 @@ const Mydata = () => {
             tech_stack: ["Next js","Typescript","Tailwind CSS","Hasura GraphQL"],
             link: "https://z1n.vercel.app"
         },
-        {
-            id: 7,
-            title: 'Grey Valour',
-            body: `
-                An online platform with a skilled team of tech experts 
-                creating projects, solutions, tutorials, and fostering an 
-                open-source community for freelancers and tech 
-                enthusiasts.
-            `,
-            shortened : "Online platform led by skilled tech experts, creating projects, solutions, tutorials, and fostering an open-source community for freelancers and tech enthusiasts.",
-            img: "/Images/project3.png",
-            tech_stack: ["React", "Python" ,"Django","Javascript","Redux","Bootstrap","Python Anywhere","AWS"],
-            link: "https://www.greyvalour.com/"
-        },
+        // {
+        //     id: 7,
+        //     title: 'Grey Valour',
+        //     body: `
+        //         An online platform with a skilled team of tech experts 
+        //         creating projects, solutions, tutorials, and fostering an 
+        //         open-source community for freelancers and tech 
+        //         enthusiasts.
+        //     `,
+        //     shortened : "Online platform led by skilled tech experts, creating projects, solutions, tutorials, and fostering an open-source community for freelancers and tech enthusiasts.",
+        //     img: "/Images/project3.png",
+        //     tech_stack: ["React", "Python" ,"Django","Javascript","Redux","Bootstrap","Python Anywhere","AWS"],
+        //     link: "https://www.greyvalour.com/"
+        // },
         
         {
             id: 6,
@@ -37,7 +37,7 @@ const Mydata = () => {
             shortened : "Your go-to online learning platform for skill enhancement and career advancement in Tech, Domestic, Business, and Academics, curated by experienced tutors.",
             img: "/Images/project2.png",
             tech_stack: ["React", "Python", "Django","Javascript","Redux","Bootstrap","Linode"],
-            link: "https://www.ustuda.com/"
+            link: "https://www.ustuda.com"
         },
         {
             id: 5,
@@ -51,7 +51,7 @@ const Mydata = () => {
             shortened : "A cultural empowerment app for kids aged 0 months to 17 years, promoting cultural pride, unity, and awareness through activities such as cultural activism, fashion, modeling, and acting. Dedicated to eliminating discrimination, bullying, and segregation by fostering self-growth and talent utilization.",
             img: "/Images/project1.png",
             tech_stack: ["React","Python", "Django","Javascript","Redux","Bootstrap","Python Anywhere","AWS"],
-            link: "https://www.kidsmulticulturalworld.org/"
+            link: "https://www.kidsmulticulturalworld.org"
         },
         {
             id: 2,
