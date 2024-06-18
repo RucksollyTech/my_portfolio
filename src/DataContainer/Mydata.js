@@ -12,32 +12,19 @@ const Mydata = () => {
             tech_stack: ["Next js","Typescript","Tailwind CSS","Hasura GraphQL"],
             link: "https://z1n.vercel.app"
         },
-        // {
-        //     id: 7,
-        //     title: 'Grey Valour',
-        //     body: `
-        //         An online platform with a skilled team of tech experts 
-        //         creating projects, solutions, tutorials, and fostering an 
-        //         open-source community for freelancers and tech 
-        //         enthusiasts.
-        //     `,
-        //     shortened : "Online platform led by skilled tech experts, creating projects, solutions, tutorials, and fostering an open-source community for freelancers and tech enthusiasts.",
-        //     img: "/Images/project3.png",
-        //     tech_stack: ["React", "Python" ,"Django","Javascript","Redux","Bootstrap","Python Anywhere","AWS"],
-        //     link: "https://www.greyvalour.com/"
-        // },
-        
         {
-            id: 6,
-            title: 'Ustuda',
-            body: `U-STUDA: An online learning platform offering diverse 
-            courses to enhance skills and education for career advancement
-             in Tech, Domestic, Business, 
-            and Academics, created by experienced tutors.`,
-            shortened : "Your go-to online learning platform for skill enhancement and career advancement in Tech, Domestic, Business, and Academics, curated by experienced tutors.",
-            img: "/Images/project2.png",
-            tech_stack: ["React", "Python", "Django","Javascript","Redux","Bootstrap","Linode"],
-            link: "https://www.ustuda.com"
+            id: 7,
+            title: 'Grey Valour',
+            body: `
+                An online platform with a skilled team of tech experts 
+                creating projects, solutions, tutorials, and fostering an 
+                open-source community for freelancers and tech 
+                enthusiasts.
+            `,
+            shortened : "Online platform led by skilled tech experts, creating projects, solutions, tutorials, and fostering an open-source community for freelancers and tech enthusiasts.",
+            img: "/Images/project3.png",
+            tech_stack: ["React", "Python" ,"Django","Javascript","Redux","Bootstrap","Python Anywhere","AWS"],
+            link: "https://grey-valour.vercel.app"
         },
         {
             id: 5,
@@ -52,6 +39,18 @@ const Mydata = () => {
             img: "/Images/project1.png",
             tech_stack: ["React","Python", "Django","Javascript","Redux","Bootstrap","Python Anywhere","AWS"],
             link: "https://www.kidsmulticulturalworld.org"
+        },
+        {
+            id: 6,
+            title: 'Ustuda',
+            body: `U-STUDA: An online learning platform offering diverse 
+            courses to enhance skills and education for career advancement
+             in Tech, Domestic, Business, 
+            and Academics, created by experienced tutors.`,
+            shortened : "Your go-to online learning platform for skill enhancement and career advancement in Tech, Domestic, Business, and Academics, curated by experienced tutors.",
+            img: "/Images/project2.png",
+            tech_stack: ["React", "Python", "Django","Javascript","Redux","Bootstrap","Linode"],
+            link: "https://ustuda-production.vercel.app"
         },
         {
             id: 2,
@@ -87,7 +86,7 @@ const Mydata = () => {
             shortened : "A global digital team blending design and technology to create empowering brand experiences worldwide.",
             img: "/Images/project4.png",
             tech_stack: ["jQuery", "Flask","Javascript","Bootstrap","AWS"],
-            link: "https://ctdigitaltech.com/"
+            link: "https://ctdigitaltech.com"
         },
         {
             id: 3,

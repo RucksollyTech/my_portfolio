@@ -1,23 +1,7 @@
 
 const ExperienceData = () => {
     const data = [
-        // {
-        //     name: "Grey Valour",
-        //     position: "Full Stack Developer",
-        //     date: "2023 - PRESENT",
-        //     description: `
-        //             I transformed the startup company website, making it more flexible 
-        //             and user-friendly. Additionally, I developed high-quality, robust 
-        //             production code for various client projects, focusing on interactive 
-        //             user experiences. Moreover, I conducted online live classes, tutoring 
-        //             students in web development, and guiding them throughout their 
-        //             learning journey, graduating over 20 students. Furthermore, I 
-        //             implemented UI design enhancements in the Grey Valour application, 
-        //             resulting in an 80% boost in service request ease.
-        //         `,
-        //     tech_stack: ["React", "Django","Javascript","Redux","Bootstrap","Python AnyWhere","AWS"],
-        //     type: "experience",
-        // },
+        
         {
             name: "Kids Multicultural World",
             position: "Full Stack Developer",
@@ -34,6 +18,24 @@ const ExperienceData = () => {
             tech_stack: ["React", "Django","Javascript","Bootstrap","Redux","Python AnyWhere","AWS"],
             type: "experience",
             url: "https://www.kidsmulticulturalworld.org"
+        },
+        {
+            name: "Grey Valour",
+            position: "Full Stack Developer",
+            date: "CONTRACT",
+            description: `
+                    I transformed the startup company website, making it more flexible 
+                    and user-friendly. Additionally, I developed high-quality, robust 
+                    production code for various client projects, focusing on interactive 
+                    user experiences. Moreover, I conducted online live classes, tutoring 
+                    students in web development, and guiding them throughout their 
+                    learning journey, graduating over 20 students. Furthermore, I 
+                    implemented UI design enhancements in the Grey Valour application, 
+                    resulting in an 80% boost in service request ease.
+                `,
+            tech_stack: ["React", "Django","Javascript","Redux","Bootstrap","Python AnyWhere","AWS"],
+            type: "experience",
+            url: "https://grey-valour.vercel.app"
         },
         {
             name: "CT Digital",
@@ -66,8 +68,6 @@ const ExperienceData = () => {
             type: "experience",
             url: "https://premiereacademyng.org"
         },
-        
-
     ]
     return data
 }
