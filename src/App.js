@@ -4,6 +4,7 @@ import Home from "./SkyHouse/Home";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./SkyHouse/Contact";
+import Certificates from "./Certificates";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
 					<Route path="/about" element ={<About/>} />
 					<Route path="/projects" element ={<Projects/>} />
 					<Route path="/contact" element ={<Contact/>} />
+					<Route path="/certificates" element ={<Certificates/>} />
                 </Routes>
             </Router>
         </div>
