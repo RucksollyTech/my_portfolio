@@ -8,7 +8,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 const Certificates = () => {
-    // const theData =  Mydata()
     const theData =  [
         {
             id: 1,

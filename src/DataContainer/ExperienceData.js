@@ -1,11 +1,26 @@
 
 const ExperienceData = () => {
     const data = [
-        
+        {
+            name: "Mayrian",
+            position: "Senior Developer (Contract)",
+            date: "2024",
+            description: `
+                Migrated the company website to Next.js and optimized hosting, reducing monthly costs by $100.
+            	Developed secure, user-friendly, and high-performance applications for the company and its clients.
+            	Identified and resolved critical bugs in legacy systems to enhance functionality and reliability.
+            	Led and mentored junior developers, ensuring adherence to best coding practices.
+            	Collaborated with designers to deliver robust, scalable solutions and improve user experience.
+
+                `,
+            tech_stack: ["React","Next js", "Typescript", "Django","Javascript","Bootstrap","Redux","Tailwind", "Python AnyWhere","AWS"],
+            type: "experience",
+            url: "https://www.mayrian.com"
+        },
         {
             name: "Kids Multicultural World",
             position: "Full Stack Developer",
-            date: "2022-PRESENT",
+            date: "2022-2024",
             description: `
                     I transformed the company website, introducing flexibility and elevating 
                     the overall user experience, which led to a 70% increase in company 

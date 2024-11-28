@@ -2,6 +2,28 @@
 const Mydata = () => {
     const data = [
         {
+            id: 10,
+            title: 'Kleopatra Vargas',
+            body: `
+            An Ecommerce website for kids and adults
+            `,
+            shortened : "An Ecommerce website for kids and adults",
+            img: "/Images/project9.png",
+            tech_stack: ["React", "Python" ,"Django","Javascript","Redux","Bootstrap","Python Anywhere","AWS"],
+            link: "https://www.kleopatravargas.shop"
+        },
+        {
+            id: 9,
+            title: 'Kleopatra Vargas',
+            body: `
+            An Ecommerce website for kids and adults
+            `,
+            shortened : "An Ecommerce website for kids and adults",
+            img: "/Images/project9.png",
+            tech_stack: ["React", "Python" ,"Django","Javascript","Redux","Bootstrap","Python Anywhere","AWS"],
+            link: "https://www.kleopatravargas.shop"
+        },
+        {
             id: 8,
             title: 'URL Shortener',
             body: `
