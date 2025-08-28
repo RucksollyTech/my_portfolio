@@ -216,7 +216,12 @@ a{
 ul{
     list-style: none;
 }
-
+.setting_loader_width{
+    max-width: 50px;
+}
+.display_block{
+    display: block;
+}
 .projectListContainer div{
     display: block;
     margin-bottom: 15px;

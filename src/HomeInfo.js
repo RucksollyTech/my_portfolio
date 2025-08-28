@@ -24,7 +24,7 @@ const HomeInfo = ({currentStage}) => {
                             {/* I am a proficient full-stack developer with a track record of impressive accomplishments */}
                         </div>
                     </h1>
-                    <div className="bottomInfo">
+                    <div className="bottomInfo pointer" onClick={()=>router("/about")}>
                         View more 😇
                     </div>
                 </div>
@@ -52,7 +52,7 @@ const HomeInfo = ({currentStage}) => {
                         Projects
                     </h1>
                     <div className="textColor bottomInfo pointer text-white" onClick={()=>router("/projects")}>
-                        <label>View Projects </label>
+                        <label className='pointer'>View Projects </label>
                         <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
                         <img width="24" height="24" className='d_none' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
                         <img width="24" height="24" className='d_none1' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>

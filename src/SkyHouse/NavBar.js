@@ -20,15 +20,15 @@ const NavBar = () => {
                 <Link to={"/home"} className='pr_2 homeLogo'>
                     <img width={homeIconSize} height={homeIconSize} src={`https://img.icons8.com/sf-black-filled/${homeIconSize}/FFFFFF/home.png`} alt="home"/>
                 </Link>
-                <a href={"/Pdf/resume.pdf"} target='_blank' rel="noreferrer">
+                <a className='text-white' href={"/Pdf/resume.pdf"} target='_blank' rel="noreferrer">
                     My Resume
                 </a>
             </div>
             <div>
-                <Link to={"/about"} className=' pr_2'>
+                <Link to={"/about"} className='text-white pr_2'>
                     About
                 </Link>
-                <Link to={"/projects"} >
+                <Link to={"/projects"} className='text-white'>
                     Projects
                 </Link>
             </div>

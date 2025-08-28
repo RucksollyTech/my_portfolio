@@ -109,36 +109,50 @@ const Projects = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div className='pt_project'>
-                        {theData && theData.map((project,index)=>(
-                            <a href={project.link} target='_blank' rel="noreferrer" className='projectContainer' key={index}>
-                                <div className='colorMuted font_13'>
-                                    {project.img && <img src={project.img} alt={`${project.title} photo`} />}
-                                </div>
-                                <div>
-                                    <div className='text_white bold6 font_18'>
-                                        {project.title}
-                                    </div>
-                                    <div className="pt-1" style={{
-                                        wordBreak: "break-word"
-                                    }}>
-                                        {project.body}
-                                        {project.id === lastId &&  
-                                            <p className="text-white">Oh, of course, you can move the <div className='text-danger d-inline-block'>robot</div> around. 😇</p>
-                                        }
-                                    </div>
-                                    <div className="pt-2">
-                                        {project.tech_stack && project.tech_stack.map((stack, index)=>(
-                                            <span key={index}>
-                                                {stack}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-                            </a>
-                        ))}
+                <div className="projectPageContainer">
+                    <motion.div
+                        variants={container}
+                        initial="hidden"
+                        animate="visible"
+                    >
+                        <motion.div className="projectTitle" variants={item}>
+                            {data.title}
+                        </motion.div>
+                        <motion.div className="projectBody pt-1" variants={item}>
+                            {data.body}
+                            {data.id === lastId &&  
+                                <span className="text-white">Oh, of course, you can move the <span className='text-danger'>robot</span> around. 😇</span>
+                            }
+                            <div className='pt-2'>
+                                <span>Tech Stack: </span>{data.tech_stack.join(', ')}
+                            </div>
+                            <div className="pt-3">
+                                <a href={data.link} target='_blank'  rel="noreferrer" className='textColor'>
+                                    <span>View Site </span>
+                                    <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                    <img width="24" height="24" className='d_none' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                    <img width="24" height="24" className='d_none1' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                </a>
+                            </div>
+                        </motion.div>
                         
+                    </motion.div>
+                    <div>
+                        <div className="projectListHeader">
+                            Projects
+                        </div>
+                        <div className='relative'>
+                            <div className="projectListContainer">
+                                {theData && theData.map(info=>(
+                                    <div key={info.id} className='textColor pointer' onClick={()=>getProject(info.id)}>
+                                        <img width="24" height="24" className='d_none' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                        <img width="24" height="24" className='d_none1' src="https://img.icons8.com/material-rounded/24/E2E8F0/forward.png" alt="forward"/>
+                                        <label className='pointer'>{info.title}</label>
+                                    </div>
+                                ))}
+                            </div>
+                            <div className='listborder' />
+                        </div>
                     </div>
                 </div>
                 <motion.div 

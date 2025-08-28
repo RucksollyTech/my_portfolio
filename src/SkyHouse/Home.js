@@ -117,7 +117,6 @@ const Home = () => {
                             isRotating={isRotating}
                             position={dronePosition}
                             scale={droneScale}
-                            // rotation={[0,20,0]}
                         />
                     </Suspense>
                 </Canvas>

@@ -2,8 +2,74 @@
 const Mydata = () => {
     const data = [
         {
+            id: 16,
+            title: 'Nairafolio Mobile App',
+            body: `
+            Fintech android/iOS application for africa.
+            `,
+            shortened : "Fintech android/iOS application for africa.",
+            img: "/Images/project16.png",
+            tech_stack: ["React Native","Nativewind","Appwrite"],
+            link: "https://expo.dev/accounts/rucksolly/projects/nairafolio/builds/8f3df83d-0b4e-4b3f-9e37-2c1babb7e3c1"
+        },
+        {
+            id: 15,
+            title: 'Tender heart',
+            body: `
+            Matchmaking website
+            `,
+            shortened : "Matchmaking website",
+            img: "/Images/project15.png",
+            tech_stack: ["Next js", "Javascript" ,"Typescript","Tailwind"],
+            link: "https://tender-heart.vercel.app"
+        },
+        {
+            id: 14,
+            title: 'PDBS',
+            body: `
+            Interior Design company
+            `,
+            shortened : "Interior Design company",
+            img: "/Images/project14.png",
+            tech_stack: ["Next js", "Javascript" ,"Typescript","Tailwind"],
+            link: "https://interior-industry.vercel.app"
+        },
+        {
+            id: 13,
+            title: 'Nairafolio web',
+            body: `
+            Fintech website for africa
+            `,
+            shortened : "Fintech website for africa",
+            img: "/Images/project13.png",
+            tech_stack: ["Next js", "Javascript" ,"Typescript","Tailwind", "Appwrite"],
+            link: "https://nairafolio.vercel.app"
+        },
+        {
+            id: 12,
+            title: 'Dashboard - Match Making',
+            body: `
+            Dashboard for managing match making web and app
+            `,
+            shortened : "Dashboard for managing match making web and app",
+            img: "/Images/project12.png",
+            tech_stack: ["Next js", "Javascript" ,"Typescript","Tailwind", "Framer motion"],
+            link: "https://tender-heart-dashboard.vercel.app/overview"
+        },
+        {
+            id: 11,
+            title: 'Brisbain',
+            body: `
+            An Advertising website 
+            `,
+            shortened : "Upcoming organizations list, website is responsive on any/every screen",
+            img: "/Images/project11.png",
+            tech_stack: ["Next", "Typescript","Javascript","Tailwind css"],
+            link: "http://match-makings.vercel.app"
+        },
+        {
             id: 10,
-            title: 'Kleopatra Vargas',
+            title: 'Kleopatra Vargas(KV)',
             body: `
             An Ecommerce website for kids and adults
             `,
@@ -14,14 +80,14 @@ const Mydata = () => {
         },
         {
             id: 9,
-            title: 'Kleopatra Vargas',
+            title: 'KV Frontend test run',
             body: `
             An Ecommerce website for kids and adults
             `,
             shortened : "An Ecommerce website for kids and adults",
             img: "/Images/project9.png",
-            tech_stack: ["React", "Python" ,"Django","Javascript","Redux","Bootstrap","Python Anywhere","AWS"],
-            link: "https://www.kleopatravargas.shop"
+            tech_stack: ["React","Javascript","Bootstrap"],
+            link: "https://ankara-bags.vercel.app"
         },
         {
             id: 8,

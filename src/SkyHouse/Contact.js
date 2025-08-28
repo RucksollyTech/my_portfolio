@@ -59,7 +59,7 @@ const Contact = () => {
             }, 10000);
             setIsLoading(false)
         }).catch(error=>{
-            
+            console.log(error)
             setErr(true)
             setShowA(true)
             setIsLoading(false)

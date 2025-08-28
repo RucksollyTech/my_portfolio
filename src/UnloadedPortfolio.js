@@ -13,9 +13,10 @@ const UnloadedPortfolio = () => {
             speed:450,
             max: 10,
         }} className='preLoaderPortfolioCover'>
-            <div className="flex">
-                <img src="/Images/gif.gif" alt="" />
-                {load && <h1 className='LoadingColorS'>Loading...</h1>}
+            <div className="flex setting_loader_width">
+                <img src="/Images/loader_bars.gif" alt="" />
+                {/* <img src="/Images/gif.gif" alt="" /> */}
+                {load && <h3 className='LoadingColorS'>Loading...</h3>}
             </div>
             <div>
                 <div className="pt-2">
