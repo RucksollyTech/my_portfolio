@@ -16,14 +16,11 @@ const UnloadedPortfolio = () => {
             <div className="flex setting_loader_width">
                 <img src="/Images/loader_bars.gif" alt="" />
                 {/* <img src="/Images/gif.gif" alt="" /> */}
-                {load && <h3 className='LoadingColorS'>Loading...</h3>}
+                {load && <h3 className='LoadingColorS'>Loading model...</h3>}
             </div>
             <div>
                 <div className="pt-2">
-                    You are here because your network/device is
-                    loading or couldn't load the model for this page, or
-                    just a coincidence you are here 😇. No matter, we
-                    are here.
+                    Mean while:
                 </div>
                 <div className="pt-2">
                     I am <span className='MyName'>Okenwa Anthony</span>
