@@ -216,7 +216,7 @@ a{
 ul{
     list-style: none;
 }
-.setting_loader_width{
+.setting_loader_width img{
     max-width: 50px;
 }
 .display_block{
