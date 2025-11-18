@@ -2,48 +2,59 @@
 const Mydata = () => {
     const data = [
         {
-            id: 16,
+            id: 17,
             title: 'Nairafolio Mobile App',
             body: `
             Fintech android/iOS application for africa.
             `,
             shortened : "Fintech android/iOS application for africa.",
-            img: "/Images/project16.png",
+            img: "/Images/project17.png",
             tech_stack: ["React Native","Nativewind","Appwrite"],
             link: "https://expo.dev/accounts/rucksolly/projects/nairafolio/builds/8f3df83d-0b4e-4b3f-9e37-2c1babb7e3c1"
         },
         {
-            id: 15,
+            id: 16,
             title: 'Tender heart',
             body: `
             Matchmaking website
             `,
             shortened : "Matchmaking website",
-            img: "/Images/project15.png",
+            img: "/Images/project16.png",
             tech_stack: ["Next js", "Javascript" ,"Typescript","Tailwind"],
             link: "https://tender-heart.vercel.app"
         },
         {
-            id: 14,
+            id: 15,
             title: 'PDBS',
             body: `
             Interior Design company
             `,
             shortened : "Interior Design company",
-            img: "/Images/project14.png",
+            img: "/Images/project15.png",
             tech_stack: ["Next js", "Javascript" ,"Typescript","Tailwind"],
             link: "https://interior-industry.vercel.app"
         },
         {
-            id: 13,
+            id: 14,
             title: 'Nairafolio web',
             body: `
             Fintech website for africa
             `,
             shortened : "Fintech website for africa",
-            img: "/Images/project13.png",
+            img: "/Images/project14.png",
             tech_stack: ["Next js", "Javascript" ,"Typescript","Tailwind", "Appwrite"],
             link: "https://nairafolio.vercel.app"
+        },
+        {
+            id: 13,
+            title: 'Superstar Kids',
+            body: `
+            Kids fashion show USA. Integrated a voting system for ongoing fashion competitions.
+            `,
+            shortened : "Kids fashion show USA. Integrated a voting system for ongoing fashion competitions.",
+            img: "/Images/project13.png",
+            tech_stack: ["Next js", "Javascript","Tailwind", "Django", "stripe"],
+            link: "https://vote.superstarkidsmagazine.org"
         },
         {
             id: 12,
