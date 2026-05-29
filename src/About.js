@@ -136,11 +136,6 @@ const About = () => {
             <div className={`SunCover ${activateSpace ? "Open" : ""}`}>
                 <ScrollSpy>
                     <div id='about'>
-
-
-
-
-
                         <div>             
                             My journey into software development began in 2016 during my university studies, when I was first introduced to C++. What started as curiosity quickly grew into a passion for building solutions through technology. 
                             Since then, I have expanded my expertise across multiple programming languages and frameworks, including Python, Django, Flask, JavaScript, React, Next.js, and modern cloud-based development tools.
