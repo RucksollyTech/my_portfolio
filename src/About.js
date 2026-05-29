@@ -47,7 +47,7 @@ const About = () => {
         window.removeEventListener('scroll', handleScroll);
         };
     }, [prevScrollY2]);
-
+    // kj
     return (
         <div className='MainContainer'>
             <div>
