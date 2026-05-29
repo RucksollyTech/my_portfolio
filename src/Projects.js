@@ -120,10 +120,13 @@ const Projects = () => {
                                     <div className='text_white bold6 font_18'>
                                         {project.title}
                                     </div>
-                                    <div className="pt-1" style={{
-                                        wordBreak: "break-word"
-                                    }}>
-                                        {project.body}
+                                    <div className="pt-1">
+                                        <div 
+                                            style={{
+                                                wordBreak: "break-word"
+                                            }}
+                                            dangerouslySetInnerHTML={{__html: project.body}} 
+                                        />
                                         {project.id === lastId &&  
                                             <p className="text-white">Oh, of course, you can move the <div className='text-danger d-inline-block'>robot</div> around. 😇</p>
                                         }

@@ -2,6 +2,49 @@
 const Mydata = () => {
     const data = [
         {
+            id: 19,
+            title: 'Car Detection Model ',
+            shortened: `
+            Developed a deep learning computer vision model for predicting types of car.
+            `,
+            body: `
+             Developed a deep learning computer vision model
+            using the Stanford Cars dataset (196 classes), to detect different car models and types.
+            Implemented transfer learning using ResNet50 and applied augmentation techniques to
+            improve model generalization. Built an inference pipeline for image-based real-time
+            predictions. Built into a web app for easy use.
+
+            <div>
+                <div>
+                    Model training script:
+                </div>
+                <div>
+                    <a target='_blank' rel="noreferrer" href="https://github.com/RucksollyTech/CNN-ResNet50-Stanford-Cars-dataset-Model">
+                        https://github.com/RucksollyTech/CNN-ResNet50-Stanford-Cars-dataset-Model
+                    </a>
+                </div>
+                <div>
+                    Django backend Code:
+                </div>
+                <div>
+                    <a target='_blank' rel="noreferrer" href="https://github.com/RucksollyTech/cardetect-backend">
+                        https://github.com/RucksollyTech/cardetect-backend
+                    </a>
+                </div>
+                <div>
+                    Next js client code:
+                </div>
+                <div>
+                    <a target='_blank' rel="noreferrer" href="https://github.com/RucksollyTech/car_detect_AI">
+                        https://github.com/RucksollyTech/car_detect_AI
+                    </a>
+                </div>
+            </div>`,
+            img: "/Images/car_icon_exact.png",
+            tech_stack: ["Next js","Pytorch","django"],
+            link: "https://car-detect-azure.vercel.app"
+        },
+        {
             id: 17,
             title: 'Nairafolio Mobile App',
             body: `
@@ -44,6 +87,18 @@ const Mydata = () => {
             img: "/Images/project14.png",
             tech_stack: ["Next js", "Javascript" ,"Typescript","Tailwind", "Appwrite"],
             link: "https://nairafolio.vercel.app"
+        },
+        
+        {
+            id: 18,
+            title: 'Elegant Wedding Invitation app',
+            body: `
+            A beautiful designed web app to invite wedding guests
+            `,
+            shortened : "A beautiful designed web app to invite wedding guests",
+            img: "/Images/try3.png",
+            tech_stack: ["Next js","typeScript"],
+            link: "https://franks-wedding.vercel.app"
         },
         {
             id: 13,
