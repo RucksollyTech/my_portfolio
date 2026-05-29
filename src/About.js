@@ -136,38 +136,26 @@ const About = () => {
             <div className={`SunCover ${activateSpace ? "Open" : ""}`}>
                 <ScrollSpy>
                     <div id='about'>
-                        <div>
-                            In 2016, my journey into the world of coding began during 
-                            my university days when C++ sparked my imagination with its 
-                            transformative capabilities. This initial spark evolved into 
-                            a passion for coding, leading me through the realms of Python, 
-                            Flask, Django, and eventually into the expansive landscape of 
-                            JavaScript, React, Next.js, and a diverse array of tech stacks 
-                            (refer to my <a href="/Pdf/resume.pdf" target='_blank' rel="noreferrer">resume</a> for a detailed list).
+
+
+
+
+
+                        <div>             
+                            My journey into software development began in 2016 during my university studies, when I was first introduced to C++. What started as curiosity quickly grew into a passion for building solutions through technology. 
+                            Since then, I have expanded my expertise across multiple programming languages and frameworks, including Python, Django, Flask, JavaScript, React, Next.js, and modern cloud-based development tools.
                         </div>
                         <div className='pt-3'>
-                            Beyond personal exploration, I ventured into assisting friends
-                             in the computer department with their assignments and projects. 
-                             This hands-on experience naturally evolved into crafting websites 
-                             for entrepreneurial friends. Along the way, I've had the privilege 
-                             of imparting my knowledge to over 500 students in the art of web 
-                             development. As a testament to my dedication, I spend my free 
-                             time conducting live web development classes and aspire to release 
-                             online courses soon.
+                            Over the years, I have worked on a wide range of projects spanning web applications, mobile applications, AI-powered solutions, and scalable backend systems. My experience includes developing production-ready software, collaborating with multidisciplinary teams, and delivering solutions that solve real business problems.
                         </div>
                         <div className='pt-3'>
-                            Away from the screen, I enjoy online gaming with friends, 
-                            particularly engaging in Call of Duty, or indulging in 
-                            console gaming with PES. When not in the gaming realm, 
-                            I'm captivating my girlfriend with the endless possibilities 
-                            of programming and showcasing the cool things that code 
-                            can bring to life.
+                            Beyond professional development, I have always enjoyed sharing knowledge and helping others grow. I have mentored and taught hundreds of students in web development, guiding them through programming fundamentals, software engineering concepts, and practical project development.
                         </div>
                         <div className="pt-3">
-                            Just as my coding journey began with curiosity and 
-                            unfolded into a wealth of experiences, I am excited 
-                            about bringing imaginations to life and eager to 
-                            make a substantial difference.
+                            Today, I am pursuing a Master's degree in Artificial Intelligence at Johannes Kepler University Linz, where I am further strengthening my expertise in machine learning, deep learning, and intelligent systems. My goal is to combine strong software engineering foundations with AI technologies to build impactful, scalable, and innovative solutions.
+                        </div>
+                        <div className="pt-3">
+                            I am driven by continuous learning, solving challenging problems, and transforming ideas into products that create meaningful value.
                         </div>
                         <div className="pt-3">
                             <span className="text-warning">
